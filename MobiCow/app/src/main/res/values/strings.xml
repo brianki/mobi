@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MobiCow</string>
+    <string name="welcome_to_mobicow">WELCOME TO MobiCow</string>
+    <string name="login">Login</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="register">REGISTER</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_occoured">Item already Exists</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="post_success">Item Posted successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="confirm">Confirm</string>
+    <string-array name="loginas">
+        <item> Admin</item>
+        <item> Farmer</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

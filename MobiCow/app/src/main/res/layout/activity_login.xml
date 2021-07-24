@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative"
+    tools:context=".LoginActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bgheader"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/cow"/>
+
+    <TextView
+        android:id="@+id/tvdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_mobicow"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/background_color"/>
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="tvlogin"
+        android:text="@string/login"
+        android:layout_below="@+id/tvdesc"
+        android:layout_alignStart="@id/tvdesc"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@id/bgheader"
+        android:src="@drawable/circle"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginTop="-80dp"
+        android:layout_alignParentEnd="true"
+
+        />
+    <ImageView
+        android:id="@+id/circler"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:src="@drawable/circle"
+        android:layout_marginStart="-100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+
+
+        />
+    <ImageView
+        android:id="@+id/circl"
+        android:layout_width="184dp"
+        android:layout_height="208dp"
+        android:src="@drawable/circle"
+        android:layout_marginEnd="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        />
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                app:cardElevation="3dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp">
+
+                    <TextView
+                        android:id="@+id/textviewloginas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login As"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+
+                        android:textSize="14sp"/>
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editemail"
+                        android:inputType="textEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editpass"
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_below="@id/cv"
+                android:layout_alignStart="@id/cv"
+                android:layout_alignEnd="@id/cv">
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:background="@drawable/bg_ui"
+                    android:textColor="@color/background_color"
+                    android:textAllCaps="false"
+                    />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/cv"
+                android:layout_marginRight="-20dp"
+                android:layout_marginTop="-20dp"
+                android:layout_alignEnd="@id/cv"
+                android:elevation="10dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/btregister"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/bg_ui"
+                    app:srcCompat="@drawable/ic_add_black_24dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tvforgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:layout_below="@id/cv"
+                android:layout_centerHorizontal="true"
+                android:text="@string/forgot_password"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+
+        android:title="Home" />
+    <item
+        android:id="@+id/manage"
+
+        android:title="Manage Profile" />
+    <item
+        android:id="@+id/bill"
+
+        android:title="pay bill" />
+    <item
+        android:id="@+id/check"
+
+        android:title="check bill" />
+
+    <item
+        android:id="@+id/about"
+
+        android:title="About CU" />
+    <item
+        android:id="@+id/location"
+
+        android:title="Find location" />
+
+
+</menu>
